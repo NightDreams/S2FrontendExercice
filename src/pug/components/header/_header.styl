@@ -1,12 +1,36 @@
 .logo
-  width: 60%
   h1
-    font-size: 59pt
+    font-size: 57pt
+    margin-bottom: 24px
   p
     font-size: 26pt
+    margin-bottom: 12px
 nav
-  max-width 1560px
   display: flex
-  a 
-    font-size: 18pt
-    margin: 0 130px
+  align-content: center
+  justify-content: space-between
+  flex-wrap: wrap;
+
+.home, nav div 
+  height 60px
+.home
+  background-color: #f00;
+  flex-basis: 20%;
+  text-align: center;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 12px 0 0 12px;
+nav div 
+    border-radius: 0 12px 12px 0;
+    background-color: #d6d6d6
+    flex-basis: 80%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+a
+  flex-basis: 262px
+  font-size: 18pt
+  text-align: center;
+  text-decoration: none
+  color: white

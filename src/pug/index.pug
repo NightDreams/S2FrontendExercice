@@ -3,39 +3,18 @@ html(lang="es")
   head
     title Frontend Exercice
     meta(charset="UTF-8")
-    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")  
     link(rel="stylesheet", href="../css/index.css")
   body
-    include ./components/header/_header.pug
-    include ./components/main/_main.pug
-    section
-      article
-        img(src="", alt="")
-        div 
-          h2  
-          p
-      article
-        img(src="", alt="")
-        div 
-          h2  
-          p
-      article
-        img(src="", alt="")
-        div 
-          h2  
-          p
-      article
-        img(src="", alt="")
-        div 
-          h2  
-          p
-    section
-      article
-        img(src="", alt="")
-        div 
-          h2  
-          p
-    footer
-      figure
-      p
-        small
+    .container
+      include components/header/_header.pug
+      include components/main/_main.pug
+      section
+        include ./components/article/_article.pug
+        include ./components/article/_article.pug
+        include ./components/article/_article.pug
+        include ./components/article/_article.pug
+      section
+        include components/new/_new.pug
+      include components/footer/_footer.pug
+
