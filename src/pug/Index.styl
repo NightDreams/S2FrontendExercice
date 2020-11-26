@@ -3,5 +3,9 @@
 @import "../pug/components/_components.styl"
 .container
   max-width: 1636px
-  display: grid
-  justify-content: center
+  min-width: 100%
+@media screen and (min-width: 1024px)
+
+  .home, nav div
+      height 60px
+

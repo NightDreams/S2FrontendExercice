@@ -1,36 +1,32 @@
 .logo
   h1
-    font-size: 57pt
-    margin-bottom: 24px
+    font-size: calc(57pt / 3);
+    margin: var(--s1x) var(--s1x);
   p
-    font-size: 26pt
+    font-size: calc(26pt - 12pt);
     margin-bottom: 12px
+
 nav
-  display: flex
-  align-content: center
-  justify-content: space-between
-  flex-wrap: wrap;
+  display: grid
+  grid-template-columns: auto auto
 
 .home, nav div 
   height 60px
-.home
-  background-color: #00f;
-  flex-basis: 20%;
-  text-align: center;
-  align-items: center;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+.home
   border-radius: 12px 0 0 12px;
+  background-color: #00f;
 nav div 
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
     border-radius: 0 12px 12px 0;
     background-color: #d6d6d6
-    flex-basis: 80%;
-    text-align: center;
-    align-items: center;
-    display: flex;
 a
-  flex-basis: 262px
-  font-size: 18pt
+  font-size: 11pt
   text-align: center;
   text-decoration: none
   color: white
